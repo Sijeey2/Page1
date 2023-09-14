@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media Gallery</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Sb19 </h1>
+    </header>
+    <nav>
+        <p>Home | Picture | About </p>
+    </nav>
+    <section>
+        <h2>Pictures</h2>
+        <div class="media-container">
+            <div class="media-item">
+                <img id="image1" src="sb19.jpeg" alt="Image 1">
+            </div>
+            <div class="media-item">
+                <img id="image2" src="ss.jpeg" alt="Image 2">
+            </div>
+            <div class="media-item">
+                <img id="image3" src="sss.jpeg" alt="Image 3">
+            </div>
+        </div>
+        <script>
+            function changeImage(imageId, newSrc) {
+                var image = document.getElementById(imageId);
+                image.src = newSrc;
+            }
+        </script>
+        <button onclick="changeImage('image1', 'hii.jpeg')">Change Image 1</button>
+        <button onclick="changeImage('image2', 'sb19.jpeg')">Change Image 2</button>
+        <button onclick="changeImage('image3', 'ss.jpeg')">Change Image 3</button>
+
+        <h2>Videos</h2>
+        <div class="media-container">
+            <div class="media-item">
+                <video width="320" height="240" controls autoplay>
+                    <source src="https://player.vimeo.com/external/271510997.sd.mp4?s=4cf911b949066ba984a9535427043fc5c8fbef22&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="media-item">
+                <video width="320" height="240" controls autoplay>
+                    <source src="https://player.vimeo.com/external/194101912.sd.mp4?s=6827b08bcf010f2f667105c5786f8ae8af308b47&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="media-item">
+                <video width="320" height="240" controls autoplay>
+                    <source src="https://player.vimeo.com/external/434045526.sd.mp4?s=c27eecc69a27dbc4ff2b87d38afc35f1a9e7c02d&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
